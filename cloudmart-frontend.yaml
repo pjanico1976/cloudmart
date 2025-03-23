@@ -9,13 +9,13 @@ spec:
       app: cloudmart-frontend-app
   template:
     metadata:
-      labels:
+     labels:
         app: cloudmart-frontend-app
     spec:
       serviceAccountName: cloudmart-pod-execution-role
       containers:
       - name: cloudmart-frontend-app
-        image: public.ecr.aws/e1i1r4k9/cloudmaster-frontend:latest
+        image: CONTAINER_IMAGE
 ---
 
 apiVersion: v1
